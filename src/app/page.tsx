@@ -1,7 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { connectToDatabase } from "../../api/db";
+import { crearProducto, obtenerProductos } from "../../utils/dbUtils";
+import { producto } from "../../api/products";
 
 export default function Home() {
+
+
+  crearProducto(producto)
+  obtenerProductos()
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
