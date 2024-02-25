@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.slot{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+}

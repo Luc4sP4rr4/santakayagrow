@@ -1,0 +1,70 @@
+/* styles/ContactForm.module.css */
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #878787;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+  
+  .form-group input[type='text'],
+  .form-group input[type='email'],
+  .form-group textarea {
+    height: 60%;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 80%;
+    font-family: 'rawlesRegular';
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  .btn {
+    
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'rawlesRegular';
+    font-size: 2rem;
+  }
+  
+  .btn:hover {
+    background: #555;
+  }
+  

@@ -1,0 +1,49 @@
+.bodydash {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cards {
+    min-height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    flex-basis: calc(33.33% - 2rem);
+    border-radius: 20px;
+    border: 4px solid #7b7b7b;
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (max-width: 1380px) {
+    .bodydash {
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .cards {
+        flex-basis: calc(50% - 40px);
+    }
+
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 720px) {
+    .bodydash {
+        display: flex;
+        overflow-y: auto;
+    }
+
+    .cards {
+        flex-basis: calc(100% - 40px);
+    }
+}

@@ -1,0 +1,113 @@
+/* Estilos base */
+
+.navbar {
+    position: relative; /* Asegura que el navbar tenga una posición relativa */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 100px; /* Altura fija del navbar */
+}
+.navbarMenu{
+    display: flex;
+    width: 70%;
+
+}
+.navbarNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 80px;
+    width: 100%;
+    
+}
+.navLink{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarBrand {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo {
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+}
+.imagenLogo{
+    height: 85px;
+    width: 85px;
+}
+.navbarToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbarToggleIcon {
+    display: none;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 1380px) {
+    .navbarBrand{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbarMenu {
+        display: none; /* Oculta el menú por defecto */
+        width: 100%;
+        background-color: #333;
+        z-index: 999; /* Asegura que el menú esté encima del resto del contenido */
+        transition: opacity 0.3s ease; /* Agrega una transición suave para la propiedad opacity */
+        opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
+        position: absolute;
+        top: 60px;
+    }
+
+    .navbarMenu.isOpen {
+        display: flex; /* Muestra el menú cuando isOpen sea true */
+        flex-direction: column;
+        position: absolute;
+        top: 95px;
+        opacity: 1; /* Cambia la opacidad a 1 para mostrar el menú */
+    }
+
+    .navbarNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        position: relative;/* Ajusta el navbarNav para que se superponga al contenido principal */
+        
+    }
+
+    .navItem {
+        width: 100vw;
+        display: flex;
+        border: solid #222 ;
+    }
+    
+
+    .navbarToggleIcon {
+        display: inline-block;
+        font-size: 50px;
+    }
+}

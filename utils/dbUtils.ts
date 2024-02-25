@@ -1,5 +1,7 @@
 import { connectToDatabase } from "../api/db";
 import { producto }from "../api/products";
+
+
 // Crear un nuevo producto
 export async function crearProducto(producto: any) {
     try {

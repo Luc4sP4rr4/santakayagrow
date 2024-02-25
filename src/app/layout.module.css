@@ -1,0 +1,12 @@
+
+.bodypage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: #94ff7fd0;
+    text-shadow: -1px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000; /* Efecto de contorno */
+}

@@ -1,0 +1,23 @@
+.container{
+    height: auto;
+    gap: 3rem;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redes{
+    width: 60%;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+.red{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
